@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap');
+
+$primary-color: #29394e;
+$secondary-color: #182231;
+$color-dark: #000;
+$color-light: #fff;
+$color-accent: #89be06;
+$color-alien-gray: #344860;
+
+.footer {
+  background-color: $color-accent;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+
+  p {
+    font-family: 'Special Elite', cursive;
+    font-family: 'Lato', sans-serif;
+    margin-top: 3rem;
+    background: $color-accent;
+    color: $color-alien-gray;
+
+    a {
+      color: $secondary-color;
+      font-family: 'Quantico', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}

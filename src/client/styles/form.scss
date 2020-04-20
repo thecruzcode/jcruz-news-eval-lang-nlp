@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Special+Elite&display=swap');
+
+$primary-color: #29394e;
+$secondary-color: #182231;
+$color-dark: #000;
+$color-light: #fff;
+$color-accent: #89be06;
+
+.analysis {
+  align-content: center;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  .form__wrapper {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 10rem;
+    width: 90vw;
+  }
+}
+
+.analysis__form {
+  display: flex;
+  align-items: center;
+  height: 30%;
+
+  input:focus {
+    outline: none;
+  }
+
+  #name {
+    border: none;
+    border-radius: 0.3rem;
+    flex: 5;
+    height: 3rem;
+    margin: 2rem 4rem;
+    padding: 1rem;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $primary-color;
+    }
+  }
+
+  #submit {
+    background: $color-accent;
+    border: none;
+    border-radius: 1rem;
+    color: $color-light;
+    flex: 1;
+    font-size: 1.1rem;
+    height: 2rem;
+    line-height: 0.3;
+    margin: 1rem 3rem 1rem 1rem;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.results {
+  align-items: center;
+  background-color: $secondary-color;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+
+  .results__heading {
+    color: $color-light;
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  .results__cards {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    div.results__card {
+      background-color: $color-light;
+      border-radius: 0.5rem;
+      height: 9rem;
+      margin: 1rem;
+      padding: 1rem;
+      width: 13rem;
+    }
+  }
+}
+
+.results__card {
+  h3 {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 2rem;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Lato', sans-serif;
+  }
+
+  div {
+    color: $color-accent;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Lato', sans-serif;
+
+    &:nth-child(3),
+    &:last-child {
+      overflow: auto;
+    }
+  }
+}

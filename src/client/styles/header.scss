@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Special+Elite&display=swap');
+
+$primary-color: #29394e;
+$secondary-color: #182231;
+$color-dark: #000;
+$color-light: #fff;
+$color-accent: #89be06;
+
+.navbar {
+  align-items: center;
+  background-color: $color-light;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+
+  .navbar__logo {
+    background: url(../views/img/news-app-logo.png) no-repeat center
+      center/cover;
+    height: 4rem;
+    width: 10rem;
+  }
+
+  .navbar__list {
+    align-items: center;
+    color: #000;
+    display: flex;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Lato', sans-serif;
+    justify-content: center;
+    text-transform: uppercase;
+
+    .list__item {
+      display: inline-block;
+
+      .item__link {
+        color: $color-dark;
+        display: block;
+        padding: 2rem 1.5rem;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $color-accent;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

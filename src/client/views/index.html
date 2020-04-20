@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Article NLP App</title>
+  </head>
+  <body>
+    <!--HEADER/NABAR-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__logo"></div>
+        <ul class="navbar__list">
+          <li class="list__item">
+            <a class="item__link" href="#hero">Base</a>
+          </li>
+          <li class="list__item">
+            <a class="item__link" href="#analysis">Obtain Analysis</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HERO - AREA   -->
+      <section class="hero hero__image--area" id="hero">
+        <div class="hero__about">
+          <h1 class="origin__heading"><span>Newslingo Inquiry</span></h1>
+          <h2 class="origin__title">
+            Utilize Newslingo to Inquire About Articles and More
+          </h2>
+          <p class="origin__text">
+            The need for new companies to cultivate information in order to gain
+            more insight has become a demand in our tech industry these days.
+          </p>
+          <br />
+          <p class="origin__text">
+            Newslingo is the perfect tool to help obtain information on the
+            author's tone. It help by zeroing in if the writer is positive,
+            neutral, negative and subjective or objective. To use Newslingo, all
+            you need to do is enter the url and the information needed will be
+            provided.
+          </p>
+        </div>
+      </section>
+      <section class="analysis" id="analysis">
+        <div class="form__wrapper">
+          <form class="analysis__form" onsubmit="Client.handleSubmit(event)">
+            <input
+              id="name"
+              type="text"
+              name="input[url]"
+              placeholder="Enter the URL"
+            />
+            <input id="submit" type="submit" value="submit" />
+          </form>
+
+          <!-- PROVIDED INFORMATION -->
+          <div class="results" id="results">
+            <h2 class="results__heading">Provided Info</h2>
+            <div class="results__cards">
+              <div class="results__card">
+                <h3>Polarity</h3>
+                <div class="polarity"></div>
+              </div>
+
+              <div class="results__card">
+                <h3>Subjectivity</h3>
+                <div class="subjectivity"></div>
+              </div>
+
+              <div class="results__card">
+                <h3>Polarity Confidence</h3>
+                <div class="polarity_confidence"></div>
+              </div>
+
+              <div class="results__card">
+                <h3>Subjectivity Confidence</h3>
+                <div class="subjectivity_confidence"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        Text and data API provided by
+        <a href="https://aylien.com" target="_blank">Aylien</a>
+      </p>
+    </footer>
+    <script>
+      //Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        //Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>

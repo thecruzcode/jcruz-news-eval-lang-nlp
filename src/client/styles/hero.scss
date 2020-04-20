@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Special+Elite&display=swap');
+
+$primary-color: #29394e;
+$secondary-color: #182231;
+$color-dark: #000;
+$color-light: #fff;
+$color-accent: #89be06;
+
+.hero {
+  align-items: center;
+  background: url(../views/img/news-letter-plates.jpg) no-repeat center
+    center/cover;
+  background-color: $primary-color;
+  background-blend-mode: multiply;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  .hero__about {
+    width: 70vw;
+  }
+
+  .hero__about {
+    color: $color-light;
+    margin: 0 3rem;
+    padding: 3rem;
+
+    .origin__heading {
+      color: $color-accent;
+      font-family: 'Special Elite', cursive;
+      font-family: 'Lato', sans-serif;
+      font-size: 4rem;
+      font-weight: 900;
+      margin: 2rem 0;
+      text-transform: uppercase;
+    }
+    .origin__title {
+      color: $color-light;
+      font-size: 1.6rem;
+      font-family: 'Special Elite', cursive;
+      margin: 2rem 0;
+      padding-bottom: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .origin__text {
+      line-height: 1.6;
+      font-family: 'Special Elite', cursive;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      text-align: left;
+      width: 800px;
+    }
+  }
+}

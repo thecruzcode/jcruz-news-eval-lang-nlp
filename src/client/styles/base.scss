@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Special+Elite&display=swap');
+
+$primary-color: #29394e;
+$secondary-color: #182231;
+$color-dark: #000;
+$color-light: #fff;
+$color-accent: #89be06;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $color-accent;
+  font-family: 'Special Elite', cursive;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
