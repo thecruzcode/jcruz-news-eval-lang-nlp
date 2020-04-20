@@ -4,12 +4,12 @@
 
 Ojective for this project:
 
-Working with Webpack
-Webpack Loaders & Plugins
-Sass for css styling
-Create the layouts for design
-Using Service Workers
-Use the API and make request to external urls
+- Working with Webpack
+- Webpack Loaders & Plugins
+- Sass for css styling
+- Create the layouts for design
+- Using Service Workers
+- Use the API and make request to external urls
 
 - Added NPM Packages
 - Installed Webpack and Webpack cli
@@ -21,3 +21,6 @@ Use the API and make request to external urls
 - Added sass loaders
 - Set up the API and obtained API KEY and ID
 - Added Aylien SDK
+
+Newslingo app deployed on netflify
+Link: https://hardcore-northcutt-e312bc.netlify.app/
